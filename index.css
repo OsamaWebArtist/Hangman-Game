@@ -1,0 +1,192 @@
+:root {
+    --main-color: #2196f3;
+}
+
+body {
+    background-image: url(./89781.jpg);
+    background-size: cover;
+}
+
+.hang-game {
+    width: 700px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.head-game {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.from-word span {
+    color: #2196f3;
+    font-size: 20px;
+}
+
+.boxgame {
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+    padding: 10px;
+}
+
+.hang-man {}
+
+.letters {
+    width: 54%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.letters span {
+    width: 15px;
+    margin: 3px 5px;
+    background-color: #03c4b0;
+    padding: 9px 18px;
+    /* line-height: 2.5; */
+    height: fit-content;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.clicked {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+
+.hang-man {
+    position: relative;
+
+}
+
+.bottom-bord {
+    position: absolute;
+    width: 50px;
+    border-bottom: 2px solid white;
+    bottom: 0;
+    margin-left: 20px;
+    display: none;
+}
+
+.vertical {
+    position: absolute;
+    border-left: 2px solid white;
+    bottom: 0;
+    height: 230px;
+    left: 20px;
+    display: none;
+}
+
+.horizontal {
+    position: absolute;
+    top: 18px;
+    border-top: 2px solid white;
+    width: 150px;
+    display: none;
+}
+
+.to-bottom {
+    position: absolute;
+    left: 148px;
+    border-left: 2px solid white;
+    height: 46px;
+    top: 18px;
+    display: none;
+}
+
+.hang {
+    position: absolute;
+    width: 50px;
+    border: 1px solid white;
+    border-style: dashed;
+    border-radius: 50%;
+    height: 50px;
+    left: 123px;
+    top: 62px;
+    display: none;
+}
+
+.head-man {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border: 2px solid white;
+    border-radius: 50%;
+    left: 5px;
+    top: 5px;
+    display: none;
+}
+
+.body-man {
+    position: absolute;
+    left: 148px;
+    border-left: 2px solid white;
+    height: 80px;
+    top: 42%;
+    display: none;
+}
+
+.hand-man {
+    position: absolute;
+    left: 123px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    height: 50px;
+    top: 31%;
+    width: 50px;
+    transform: rotate(-46deg);
+    display: none;
+}
+
+.legs-man {
+    position: absolute;
+    left: 123px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    height: 50px;
+    top: 77%;
+    width: 50px;
+    transform: rotate(134deg);
+    display: none;
+}
+
+.hang-man .visibleHangMan {
+    display: block;
+}
+
+
+.Words {
+    background-color: #f5f5f5;
+    padding: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.Words span {
+    width: 30px;
+    display: inline-block;
+    margin: 10px;
+    font-size: 30px;
+    color: rgb(0, 0, 0, 0);
+    position: relative;
+    border-bottom: 1px solid black;
+
+}
+
+.Words .right-let {
+    color: rgb(0, 0, 0, 0.5);
+}
